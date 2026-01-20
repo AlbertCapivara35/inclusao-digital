@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusão Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="home" class="screen active">
+    <h1>Inclusão Digital</h1>
+    <p>Aprenda a usar o computador e a internet de forma simples.</p>
+    <button onclick="mostrarTela('modulos')">Começar</button>
+    <button onclick="mostrarTela('ajuda')">Ajuda</button>
+</section>
+
+<section id="modulos" class="screen">
+    <h2>Conteúdos</h2>
+    <button onclick="abrirConteudo('computador')">Introdução ao Computador</button>
+    <button onclick="abrirConteudo('internet')">Internet Básica</button>
+    <button onclick="abrirConteudo('email')">Criar E-mail</button>
+    <button onclick="mostrarTela('home')">Voltar</button>
+</section>
+
+<section id="conteudo" class="screen">
+    <h2 id="tituloConteudo"></h2>
+    <p id="textoConteudo"></p>
+    <button onclick="mostrarTela('modulos')">Voltar</button>
+</section>
+
+<section id="ajuda" class="screen">
+    <h2>Ajuda</h2>
+    <p>Este aplicativo ajuda iniciantes a aprender tecnologia.</p>
+    <button onclick="mostrarTela('home')">Voltar</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
