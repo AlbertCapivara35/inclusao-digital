@@ -8,7 +8,7 @@ function abrirConteudo(tipo) {
     let texto = '';
 
     if (tipo === 'computador') {
-        titulo = 'Introdução ao Computador';
+        titulo = 'Introdução';
         texto = 'O computador é usado para escrever, acessar a internet e aprender. Nele vocÊ consegue fazer diversas coisas e desenvolver sistemas, programas e etc..';
     } else if (tipo === 'internet') {
         titulo = 'Internet Básica';
